@@ -1,0 +1,40 @@
+.tab {
+  color: $secondary;
+  cursor: pointer;
+  position: relative;
+  padding-bottom: 16px;
+
+  &_active {
+    color: $primary;
+
+    &::after {
+      position: absolute;
+      content: "";
+      bottom: -1px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: $accent;
+    }
+  }
+}
+
+@media screen and (min-width: $min-laptop) {
+  .tab {
+    font: {
+      size: $p-16-laptop-size;
+      weight: $p-16-laptop-weight;
+    }
+    line-height: $p-16-laptop-line-height;
+  }
+}
+
+@media screen and (max-width: $max-tablet) {
+  .tab {
+    font: {
+      size: $p-16-sm-size;
+      weight: $p-16-sm-weight;
+    }
+    line-height: $p-16-sm-line-height;
+  }
+}

@@ -1,0 +1,41 @@
+.select-item {
+  padding: 16px 24px;
+  background-color: #fff;
+  transition: 0.2s;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $accent;
+    color: #fff;
+  }
+
+  &_selected {
+    background-color: #fff;
+    color: $accent;
+
+    &:hover {
+      background-color: #fff;
+      color: $accent;
+    }
+  }
+}
+
+@media screen and (min-width: $min-laptop) {
+  .select-item {
+    font: {
+      size: $p-16-laptop-size;
+      weight: $p-16-laptop-weight;
+    }
+    line-height: $p-16-laptop-line-height;
+  }
+}
+
+@media screen and (max-width: $max-tablet) {
+  .select-item {
+    font: {
+      size: $p-16-sm-size;
+      weight: $p-16-sm-weight;
+    }
+    line-height: $p-16-sm-line-height;
+  }
+}

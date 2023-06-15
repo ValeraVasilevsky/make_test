@@ -1,0 +1,17 @@
+// Grid
+$grid-laptop: repeat(12, minmax(auto, 1fr));
+$column-laptop-gap: 32px;
+
+$grid-tablet: repeat(8, minmax(auto, 1fr));
+$column-tablet-gap: 32px;
+
+$grid-mobile: repeat(4, minmax(auto, 1fr));
+$column-mobile-gap: 24px;
+
+$min-laptop: 1200px;
+
+$max-tablet: 1199px;
+$min-tablet: 736px;
+
+$max-mobile: 735px;
+$min-mobile: 320px;

@@ -1,0 +1,17 @@
+.sidebar {
+  padding: 0px 64px;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+
+  &__links {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 16px;
+  }
+}

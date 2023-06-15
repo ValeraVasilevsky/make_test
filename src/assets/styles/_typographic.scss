@@ -1,0 +1,73 @@
+h1,
+h2,
+h3,
+h4,
+.p {
+  margin: 0;
+  color: $primary;
+}
+// laptop styles
+$h1-laptop-size: 48px;
+$h1-laptop-line-height: 56px;
+$h1-laptop-weight: 700;
+
+$h2-laptop-size: 32px;
+$h2-laptop-line-height: 40px;
+$h2-laptop-weight: 700;
+
+$h3-laptop-size: 24px;
+$h3-laptop-line-height: 32px;
+$h3-laptop-weight: 500;
+
+$h4-laptop-size: 18px;
+$h4-laptop-line-height: 28px;
+$h4-laptop-weight: 500;
+
+$p-lead-laptop-size: 24px;
+$p-lead-laptop-line-height: 32px;
+$p-lead-laptop-weight: 400;
+
+$p-18-laptop-size: 18px;
+$p-18-laptop-line-height: 28px;
+$p-18-laptop-weight: 400;
+
+$p-16-laptop-size: 16px;
+$p-16-laptop-line-height: 24px;
+$p-16-laptop-weight: 400;
+
+$p-14-laptop-size: 14px;
+$p-14-laptop-line-height: 20px;
+$p-14-laptop-weight: 400;
+
+// tablet and mobile styles
+$h1-sm-size: 32px;
+$h1-sm-line-height: 40px;
+$h1-sm-weight: 700;
+
+$h2-sm-size: 28px;
+$h2-sm-line-height: 36px;
+$h2-sm-weight: 700;
+
+$h3-sm-size: 20px;
+$h3-sm-line-height: 28px;
+$h3-sm-weight: 500;
+
+$h4-sm-size: 18px;
+$h4-sm-line-height: 28px;
+$h4-sm-weight: 500;
+
+$p-lead-sm-size: 20px;
+$p-lead-sm-line-height: 28px;
+$p-lead-sm-weight: 400;
+
+$p-18-sm-size: 18px;
+$p-18-sm-line-height: 28px;
+$p-18-sm-weight: 400;
+
+$p-16-sm-size: 16px;
+$p-16-sm-line-height: 24px;
+$p-16-sm-weight: 400;
+
+$p-14-sm-size: 14px;
+$p-14-sm-line-height: 20px;
+$p-14-sm-weight: 400;

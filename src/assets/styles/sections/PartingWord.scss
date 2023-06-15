@@ -1,0 +1,101 @@
+.parting-word {
+  &__title {
+    margin-bottom: 16px;
+    font: {
+      weight: 700;
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: 64px;
+  }
+
+  &__text {
+    margin-bottom: 80px;
+    white-space: pre-wrap;
+  }
+}
+
+@media screen and (min-width: $min-laptop) {
+  .parting-word {
+    &__title {
+      font: {
+        size: $h1-laptop-size;
+        weight: $h1-laptop-weight;
+      }
+      line-height: $h1-laptop-line-height;
+    }
+    &__subtitle {
+      font: {
+        size: $p-18-laptop-size;
+        weight: $p-18-laptop-weight;
+      }
+      line-height: $p-18-laptop-line-height;
+    }
+    &__text {
+      max-width: 592px;
+
+      font: {
+        size: $p-16-laptop-size;
+        weight: $p-16-laptop-weight;
+      }
+      line-height: $p-16-laptop-line-height;
+    }
+  }
+}
+
+@media screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
+  .parting-word {
+    &__title {
+      font: {
+        size: $h1-sm-size;
+        weight: $h1-sm-weight;
+      }
+      line-height: $h1-sm-line-height;
+    }
+    &__subtitle {
+      font: {
+        size: $p-18-sm-size;
+        weight: $p-18-sm-weight;
+      }
+      line-height: $p-18-sm-line-height;
+    }
+    &__text {
+      max-width: 592px;
+
+      font: {
+        size: $p-16-sm-size;
+        weight: $p-16-sm-weight;
+      }
+      line-height: $p-16-sm-line-height;
+    }
+  }
+}
+
+@media screen and (min-width: $min-mobile) and (max-width: $max-mobile) {
+  .parting-word {
+    &__title {
+      font: {
+        size: $h1-sm-size;
+        weight: $h1-sm-weight;
+      }
+      line-height: $h1-sm-line-height;
+    }
+    &__subtitle {
+      font: {
+        size: $p-18-sm-size;
+        weight: $p-18-sm-weight;
+      }
+      line-height: $p-18-sm-line-height;
+    }
+    &__text {
+      max-width: 300px;
+
+      font: {
+        size: $p-16-sm-size;
+        weight: $p-16-sm-weight;
+      }
+      line-height: $p-16-sm-line-height;
+    }
+  }
+}

@@ -1,0 +1,141 @@
+.typography-desktop {
+  width: 100%;
+
+  &__item {
+    display: grid;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  &__title {
+    color: $secondary;
+  }
+  &_h1 {
+    font: {
+      size: $h1-laptop-size;
+      weight: $h1-laptop-weight;
+    }
+    line-height: $h1-laptop-line-height;
+  }
+  &_h2 {
+    font: {
+      size: $h2-laptop-size;
+      weight: $h2-laptop-weight;
+    }
+    line-height: $h2-laptop-line-height;
+  }
+  &_h3 {
+    font: {
+      size: $h3-laptop-size;
+      weight: $h3-laptop-weight;
+    }
+    line-height: $h3-laptop-line-height;
+  }
+  &_h4 {
+    font: {
+      size: $h4-laptop-size;
+      weight: $h4-laptop-weight;
+    }
+    line-height: $h4-laptop-line-height;
+  }
+  &_p-lead {
+    font: {
+      size: $p-lead-laptop-size;
+      weight: $p-lead-laptop-weight;
+    }
+    line-height: $p-lead-laptop-line-height;
+  }
+  &_p-18 {
+    font: {
+      size: $p-18-laptop-size;
+      weight: $p-18-laptop-weight;
+    }
+    line-height: $p-18-laptop-line-height;
+  }
+  &_p-16 {
+    font: {
+      size: $p-16-laptop-size;
+      weight: $p-16-laptop-weight;
+    }
+    line-height: $p-16-laptop-line-height;
+  }
+  &_p-14 {
+    font: {
+      size: $p-14-laptop-size;
+      weight: $p-14-laptop-weight;
+    }
+    line-height: $p-14-laptop-line-height;
+  }
+}
+
+@media screen and (min-width: $min-laptop) {
+  .typography-desktop {
+    &__item {
+      grid-template-columns: $grid-laptop;
+      column-gap: $column-laptop-gap;
+
+      margin-bottom: 48px;
+    }
+
+    &__title {
+      grid-column: 1 / 5;
+      font: {
+        size: $p-14-laptop-size;
+        weight: $p-14-laptop-weight;
+      }
+      line-height: $p-14-laptop-line-height;
+    }
+
+    &__value {
+      grid-column: 5 / -1;
+    }
+  }
+}
+
+@media screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
+  .typography-desktop {
+    &__item {
+      grid-template-columns: $grid-tablet;
+      column-gap: $column-tablet-gap;
+
+      margin-bottom: 48px;
+    }
+
+    &__title {
+      grid-column: 1 / 4;
+      font: {
+        size: $p-14-sm-size;
+        weight: $p-14-sm-weight;
+      }
+      line-height: $p-14-sm-line-height;
+    }
+    &__value {
+      grid-column: 4 / -1;
+    }
+  }
+}
+
+@media screen and (min-width: $min-mobile) and (max-width: $max-mobile) {
+  .typography-desktop {
+    &__item {
+      grid-template-columns: $grid-mobile;
+      column-gap: $column-mobile-gap;
+      row-gap: 8px;
+
+      margin-bottom: 48px;
+    }
+
+    &__value,
+    &__title {
+      grid-column: 1 / -1;
+    }
+
+    &__title {
+      font: {
+        size: $p-14-sm-size;
+        weight: $p-14-sm-weight;
+      }
+      line-height: $p-14-sm-line-height;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.footer {
+  padding: 48px 64px;
+  text-align: center;
+}
+
+@media screen and (min-width: $min-laptop) {
+  .footer {
+    &__text {
+      font: {
+        size: $p-14-laptop-size;
+        weight: $p-14-laptop-weight;
+      }
+      line-height: $p-14-laptop-line-height;
+    }
+  }
+}
+
+@media screen and (max-width: $max-tablet) {
+  .footer {
+    &__text {
+      font: {
+        size: $p-14-sm-size;
+        weight: $p-14-sm-weight;
+      }
+      line-height: $p-14-sm-line-height;
+    }
+  }
+}

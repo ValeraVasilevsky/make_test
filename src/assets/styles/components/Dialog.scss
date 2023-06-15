@@ -1,0 +1,53 @@
+.dialog {
+  overflow: hidden;
+  display: none;
+
+  &_active {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 8px;
+    background-image: url("../../img/bg.png");
+    background-color: $primary;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
+  &__children {
+    height: 100%;
+  }
+  &__close {
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: $min-laptop) {
+  .dialog {
+    &__close {
+      margin: 28px 64px 0px auto;
+    }
+  }
+}
+
+@media screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
+  .dialog {
+    &__close {
+      margin: 28px 64px 0px auto;
+    }
+  }
+}
+
+@media screen and (min-width: $min-mobile) and (max-width: $max-mobile) {
+  .dialog {
+    &__close {
+      margin: 28px 10px 0px;
+    }
+  }
+}

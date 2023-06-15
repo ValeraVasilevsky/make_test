@@ -1,0 +1,49 @@
+.grid {
+  margin-bottom: 16px;
+  &__subtitle {
+    margin-bottom: 48px;
+    white-space: pre-wrap;
+  }
+}
+
+@media screen and (min-width: $min-laptop) {
+  .grid {
+    &__subtitle {
+      max-width: 592px;
+
+      font: {
+        size: $p-16-laptop-size;
+        weight: $p-16-laptop-weight;
+      }
+      line-height: $p-16-laptop-line-height;
+    }
+  }
+}
+
+@media screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
+  .grid {
+    &__subtitle {
+      max-width: 592px;
+
+      font: {
+        size: $p-16-sm-size;
+        weight: $p-16-sm-weight;
+      }
+      line-height: $p-16-sm-line-height;
+    }
+  }
+}
+
+@media screen and (min-width: $min-mobile) and (max-width: $max-mobile) {
+  .grid {
+    &__subtitle {
+      max-width: 280px;
+
+      font: {
+        size: $p-16-sm-size;
+        weight: $p-16-sm-weight;
+      }
+      line-height: $p-16-sm-line-height;
+    }
+  }
+}

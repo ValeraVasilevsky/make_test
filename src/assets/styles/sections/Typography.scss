@@ -1,0 +1,49 @@
+.typography {
+  margin-bottom: 80px;
+  &__subtitle {
+    margin-bottom: 48px;
+    white-space: pre-wrap;
+  }
+}
+
+@media screen and (min-width: $min-laptop) {
+  .typography {
+    &__subtitle {
+      max-width: 592px;
+
+      font: {
+        size: $p-16-laptop-size;
+        weight: $p-16-laptop-weight;
+      }
+      line-height: $p-16-laptop-line-height;
+    }
+  }
+}
+
+@media screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
+  .typography {
+    &__subtitle {
+      max-width: 592px;
+
+      font: {
+        size: $p-16-sm-size;
+        weight: $p-16-sm-weight;
+      }
+      line-height: $p-16-sm-line-height;
+    }
+  }
+}
+
+@media screen and (min-width: $min-mobile) and (max-width: $max-mobile) {
+  .typography {
+    &__subtitle {
+      max-width: 100%;
+
+      font: {
+        size: $p-16-sm-size;
+        weight: $p-16-sm-weight;
+      }
+      line-height: $p-16-sm-line-height;
+    }
+  }
+}

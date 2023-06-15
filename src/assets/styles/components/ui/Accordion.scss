@@ -1,0 +1,105 @@
+.accordion {
+  border-bottom: 1px solid $auxiliary;
+  margin-bottom: 24px;
+  cursor: pointer;
+  overflow: hidden;
+
+  &:hover {
+    border-bottom: 1px solid $accent;
+  }
+
+  &_active {
+    padding-bottom: 30px;
+    border-bottom: 2px solid $accent;
+
+    &:hover {
+      border-bottom: 2px solid $accent;
+    }
+  }
+
+  &__field {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__icon {
+    padding-bottom: 15px;
+
+    &_active {
+      padding-bottom: 0;
+    }
+  }
+  &__title {
+    color: $secondary;
+    width: 100%;
+    transition: 0.2s;
+
+    padding-bottom: 15px;
+
+    &:hover {
+      color: $primary;
+    }
+
+    &_active {
+      color: $accent;
+      padding-bottom: 0;
+
+      &:hover {
+        color: $accent;
+      }
+    }
+  }
+
+  &__content {
+    transition: all 0.2s ease;
+    white-space: pre-wrap;
+
+    max-height: 0;
+
+    &_active {
+      margin-top: 24px;
+      max-height: 100vh;
+    }
+  }
+}
+
+@media screen and (min-width: $min-laptop) {
+  .accordion {
+    &__title {
+      font: {
+        size: $p-16-laptop-size;
+        weight: 500;
+      }
+      line-height: $p-16-laptop-line-height;
+    }
+
+    &__content {
+      font: {
+        size: $p-16-laptop-size;
+        weight: $p-16-laptop-weight;
+      }
+      line-height: $p-16-laptop-line-height;
+    }
+  }
+}
+
+@media screen and (max-width: $max-tablet) {
+  .accordion {
+    &__title {
+      font: {
+        size: $p-16-sm-size;
+        weight: 500;
+      }
+      line-height: $p-16-sm-line-height;
+    }
+
+    &__content {
+      font: {
+        size: $p-16-sm-size;
+        weight: $p-16-sm-weight;
+      }
+      line-height: $p-16-sm-line-height;
+    }
+  }
+}

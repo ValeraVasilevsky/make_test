@@ -1,0 +1,23 @@
+.section-title {
+  margin-bottom: 24px;
+}
+
+@media screen and (min-width: $min-laptop) {
+  .section-title {
+    font: {
+      size: $h2-laptop-size;
+      weight: $h2-laptop-weight;
+    }
+    line-height: $h2-laptop-line-height;
+  }
+}
+
+@media screen and (max-width: $max-tablet) {
+  .section-title {
+    font: {
+      size: $h2-sm-size;
+      weight: $h2-sm-weight;
+    }
+    line-height: $h2-sm-line-height;
+  }
+}

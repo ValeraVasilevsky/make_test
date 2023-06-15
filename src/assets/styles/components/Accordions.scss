@@ -1,0 +1,29 @@
+.accordions {
+  &__title {
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (min-width: $min-laptop) {
+  .accordions {
+    &__title {
+      font: {
+        size: $h3-laptop-size;
+        weight: $h3-laptop-weight;
+      }
+      line-height: $h3-laptop-line-height;
+    }
+  }
+}
+
+@media screen and (max-width: $max-tablet) {
+  .accordions {
+    &__title {
+      font: {
+        size: $h3-sm-size;
+        weight: $h3-sm-weight;
+      }
+      line-height: $h3-sm-line-height;
+    }
+  }
+}

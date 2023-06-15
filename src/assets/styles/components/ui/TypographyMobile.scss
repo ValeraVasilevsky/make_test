@@ -1,0 +1,141 @@
+.typography-mobile {
+  width: 100%;
+
+  &__item {
+    display: grid;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  &__title {
+    color: $secondary;
+  }
+  &_h1 {
+    font: {
+      size: $h1-sm-size;
+      weight: $h1-sm-weight;
+    }
+    line-height: $h1-sm-line-height;
+  }
+  &_h2 {
+    font: {
+      size: $h2-sm-size;
+      weight: $h2-sm-weight;
+    }
+    line-height: $h2-sm-line-height;
+  }
+  &_h3 {
+    font: {
+      size: $h3-sm-size;
+      weight: $h3-sm-weight;
+    }
+    line-height: $h3-sm-line-height;
+  }
+  &_h4 {
+    font: {
+      size: $h4-sm-size;
+      weight: $h4-sm-weight;
+    }
+    line-height: $h4-sm-line-height;
+  }
+  &_p-lead {
+    font: {
+      size: $p-lead-sm-size;
+      weight: $p-lead-sm-weight;
+    }
+    line-height: $p-lead-sm-line-height;
+  }
+  &_p-18 {
+    font: {
+      size: $p-18-sm-size;
+      weight: $p-18-sm-weight;
+    }
+    line-height: $p-18-sm-line-height;
+  }
+  &_p-16 {
+    font: {
+      size: $p-16-sm-size;
+      weight: $p-16-sm-weight;
+    }
+    line-height: $p-16-sm-line-height;
+  }
+  &_p-14 {
+    font: {
+      size: $p-14-sm-size;
+      weight: $p-14-sm-weight;
+    }
+    line-height: $p-14-sm-line-height;
+  }
+}
+
+@media screen and (min-width: $min-laptop) {
+  .typography-mobile {
+    &__item {
+      grid-template-columns: $grid-laptop;
+      column-gap: $column-laptop-gap;
+
+      margin-bottom: 48px;
+    }
+
+    &__title {
+      grid-column: 1 / 5;
+      font: {
+        size: $p-14-laptop-size;
+        weight: $p-14-laptop-weight;
+      }
+      line-height: $p-14-laptop-line-height;
+    }
+
+    &__value {
+      grid-column: 5 / -1;
+    }
+  }
+}
+
+@media screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
+  .typography-mobile {
+    &__item {
+      grid-template-columns: $grid-tablet;
+      column-gap: $column-tablet-gap;
+
+      margin-bottom: 48px;
+    }
+
+    &__title {
+      grid-column: 1 / 4;
+      font: {
+        size: $p-14-sm-size;
+        weight: $p-14-sm-weight;
+      }
+      line-height: $p-14-sm-line-height;
+    }
+    &__value {
+      grid-column: 4 / -1;
+    }
+  }
+}
+
+@media screen and (min-width: $min-mobile) and (max-width: $max-mobile) {
+  .typography-mobile {
+    &__item {
+      grid-template-columns: $grid-mobile;
+      column-gap: $column-mobile-gap;
+      row-gap: 8px;
+
+      margin-bottom: 48px;
+    }
+
+    &__value,
+    &__title {
+      grid-column: 1 / -1;
+    }
+
+    &__title {
+      font: {
+        size: $p-14-sm-size;
+        weight: $p-14-sm-weight;
+      }
+      line-height: $p-14-sm-line-height;
+    }
+  }
+}

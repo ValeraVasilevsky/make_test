@@ -1,0 +1,52 @@
+.link {
+  color: $secondary;
+  transition: 0.2s;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+
+  &_active {
+    color: $accent;
+  }
+  &:hover {
+    color: $primary;
+  }
+}
+
+@media screen and (min-width: $min-laptop) {
+  .link {
+    font: {
+      size: $p-16-laptop-size;
+      weight: 500;
+    }
+    line-height: $p-16-laptop-line-height;
+
+    &_inside-app {
+      font: {
+        size: $p-14-laptop-size;
+        weight: $p-14-laptop-weight;
+      }
+      line-height: $p-14-laptop-line-height;
+    }
+  }
+}
+
+@media screen and (max-width: $max-tablet) {
+  .link {
+    font: {
+      size: $p-16-sm-size;
+      weight: 500;
+    }
+    line-height: $p-16-sm-line-height;
+
+    &_inside-app {
+      font: {
+        size: $p-14-sm-size;
+        weight: $p-14-sm-weight;
+      }
+      line-height: $p-14-sm-line-height;
+    }
+  }
+}
