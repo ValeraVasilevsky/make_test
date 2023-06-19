@@ -5,7 +5,7 @@ import { Link } from "@components/ui/Link";
 
 export const Menu = () => {
   const redirectToMessanger = () => {
-    console.log("click");
+    window.open("https://t.me/vasilevskyvalera", "_blank");
   };
 
   return (
